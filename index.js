@@ -324,7 +324,7 @@ function vowelCounter(string) {
   return counter;
 }
 
-console.log(vowelCounter("OuchieD!"));
+console.log(vowelCounter("Ouchie!"));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
