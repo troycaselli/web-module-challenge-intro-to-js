@@ -71,7 +71,7 @@ Do the following:
 */
 
 function multiply(a, b){
-  let total = a * b;
+  const total = a * b;
   return total;
 }
 
@@ -87,11 +87,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  const newAge = age * 7;
+  return newAge;
 }
 
-
+console.log(dogYears(4));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
