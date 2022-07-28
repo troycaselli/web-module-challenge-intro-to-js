@@ -188,11 +188,28 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
+let cChoice = null;
+const randomNum = Math.random();
+if(randomNum <= .3333) {
+  cChoice = "rock";
+} else if(randomNum > .3333 && randomNum<= .6667) {
+  cChoice = "paper";
+} else {
+  cChoice = "scissors";
+}
+console.log(cChoice);
+
 function game(user, computer){
-  /*add your code here*/
+  if(user === computer) {
+    return "it's a tie";
+  } else if(user === "rock" && computer === "scissors" || user === "paper" && computer === "rock" || user === "scissors" && computer === "paper") {
+      return "you win!";
+  } else {
+    return "you lose!";
+  }
 }
 
-
+console.log(game("rock", cChoice));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
