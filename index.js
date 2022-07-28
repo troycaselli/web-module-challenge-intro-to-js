@@ -21,9 +21,9 @@ Do the following:
 */
 const votingAge = 18;
 if(votingAge >= 18) {
-  console.log('true');
+  console.log(true);
 } else {
-  console.log('false');
+  console.log(false);
 }
 
 
@@ -38,10 +38,10 @@ Do the following:
 
    HINT: no function required
 */
-let firstThing = 2;
+let firstThing = 1;
 let secondThing = 2;
 
-if(firstThing === secondThing) {
+if(firstThing === 1) {
   firstThing = 3;
 }
 
@@ -190,14 +190,13 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 let cChoice = null;
 const randomNum = Math.random();
-if(randomNum <= .3333) {
+if(randomNum <= 1 / 3) {
   cChoice = "rock";
-} else if(randomNum > .3333 && randomNum<= .6667) {
+} else if(randomNum > 1 / 3 && randomNum<= 2 / 3) {
   cChoice = "paper";
 } else {
   cChoice = "scissors";
 }
-console.log(cChoice);
 
 function game(user, computer){
   if(user === computer) {
