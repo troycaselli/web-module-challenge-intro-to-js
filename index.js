@@ -138,13 +138,34 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
       
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
-*/  
+*/
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(pounds, years){
+  let food = 0;
+  if(years >= 1) {
+    if(pounds <= 5) {
+      food = pounds * .05;
+    } else if(pounds >= 6 && pounds <= 10) {
+      food = pounds * .04;
+    } else if(pounds >= 11 && pounds <= 15) {
+    food = pounds * .03;
+    } else {
+      food = pounds * .02;
+    }
+  } else {
+    years = years.toFixed(2);
+    if(years <= 4 / 12) {
+      food = pounds * .1;
+    } else if( years > 4 / 12 && years <= 7 / 12) {
+      food = pounds * .05;
+    } else {
+      food = pounds * .04;
+    }
+  }
+  return food;
 }
 
-
+console.log(hungryDog(1, .125));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
